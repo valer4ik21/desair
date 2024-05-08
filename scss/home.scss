@@ -1,0 +1,156 @@
+.home{
+    background-image: url(../img/home/symmetry-and-style-PJH3MEU.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 722px;
+    margin-bottom: 226px;
+
+
+    &__inner{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__title{
+        color: #363838;
+        font-family: 'Montserrat';
+        font-size: 110px;
+        font-weight: 700;
+
+        &::after{
+            content: '';
+            display: block;
+            background: #6D7278;
+            width: 185px;
+            height: 1px;
+            margin: 27px 0;
+        }
+    }
+
+
+    &__text{
+        color: #5A5A5A;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    &__img{
+        width: 703px;
+        margin-left: -20%;
+    }
+
+    &__item{
+
+    }
+}
+
+.home-pagination .swiper-pagination-bullet{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #363838;
+    margin-right: 29px !important ;
+    opacity: 1; 
+
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.home-pagination .swiper-pagination-bullet-active{
+    background-color: #ffef35;
+}
+
+@media (max-width:1200px){
+    .home__img{
+        width: 520px;
+        margin-left: -4%;
+    }
+
+    .home__title{
+        font-size: 87px;
+    }
+}
+
+@media (max-width:991px){
+
+    .home__title{
+        font-size: 69px;
+    }
+
+    .home__text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .home__title::after{
+        margin: 21px 0;
+    }
+
+    .home{
+        height: 527px;
+    }
+}
+
+@media (max-width:768px){
+
+    .home__img{
+        display: none;
+    }
+
+    .home__title{
+        font-size: 62px;
+        text-align: center;
+    }
+
+    .home__title::after{
+        margin: 21px auto;
+    }
+
+    .home{
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+
+    .home__inner{
+        padding: 100px 0;
+    }
+}
+
+@media (max-width:620px){
+
+    .home__title{
+        font-size: 54px;
+    }
+
+    .home__title::after{
+        margin: 18px auto;
+    }
+
+    .home{
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width:320px){
+
+    .home__title{
+        font-size: 45px;
+    }
+
+    .home__text{
+        line-height: 15px;
+        font-weight: 12px;
+    }
+
+    .home{
+        margin-bottom: 130px;
+    }
+}
+

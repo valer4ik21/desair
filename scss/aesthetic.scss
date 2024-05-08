@@ -1,0 +1,93 @@
+.aesthetic{
+    background-image: url(../img/Aesthetic/Group\ 2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 179px 0;
+    margin-bottom: 179px;
+
+    &__title{
+        color: #363838;
+        font-family: 'Montserrat';
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 80px;
+        max-width: 500px;
+
+        &::after{
+            content: '';
+            display: block;
+            background-color: #6D7278;
+            width: 200px;
+            height: 1px;
+            margin:22px 0;
+        }
+    }
+
+    &__text{
+        color: #5A5A5A;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        max-width: 540px;
+    }
+
+    &__content{
+    }
+}
+
+@media (max-width:991px){
+
+    .aesthetic{
+        padding: 140px 0;
+    }
+}
+
+@media (max-width:768px){
+
+    .aesthetic__title{
+        font-size: 57px;
+        line-height: 68px;
+    }
+
+    .aesthetic{
+        padding: 120px 0;
+    }
+}
+
+@media (max-width:520px) {
+
+    .aesthetic__title{
+        font-size: 46px;
+        line-height: 54px; 
+    }
+
+    .aesthetic__text{
+        font-size: 14px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width:420px){
+
+    .aesthetic__title{
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .aesthetic__title::after{
+        width: 160px;
+        margin: 17px 0;
+    }
+
+    .aesthetic__text{
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .aesthetic{
+        margin-bottom: 110px;
+    }
+}
