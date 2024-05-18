@@ -1,4 +1,4 @@
-const nav = document.querySelector('.header__inner') 
+const nav = document.querySelector('.header__nav') 
 const navToggle = document.querySelector('.navTuggle') 
  
 navToggle.addEventListener('click', function () { 
